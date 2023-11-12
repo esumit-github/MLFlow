@@ -1,0 +1,11 @@
+conda activate C:\Users\Sumit\GIT_Local\openai\venv\
+
+pip install -r MLFLOW\requirements.txt
+
+
+
+pip uninstall mlflow
+pip -m virtualenv env-name
+pip install conda
+pip install mlflow
+mlflow ui 
