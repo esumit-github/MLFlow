@@ -9,3 +9,38 @@ pip -m virtualenv env-name
 pip install conda
 pip install mlflow
 mlflow ui 
+
+
+
+
+echo "# MLFlow" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:esumit-github/MLFlow.git
+git push -u origin main
+
+
+
+MLFLOW_TRACKING_URI=https://dagshub.com/esumit-github/MLFlow.mlflow \
+MLFLOW_TRACKING_USERNAME=esumit-github \
+MLFLOW_TRACKING_PASSWORD=61f62e873b7f440e3d0d1d71de713ca49fe6edf2 \
+python script.py
+
+Open a new GITBash terminal and ezport the following
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/esumit-github/MLFlow.mlflow
+export MLFLOW_TRACKING_USERNAME=esumit-github
+export MLFLOW_TRACKING_PASSWORD=61f62e873b7f440e3d0d1d71de713ca49fe6edf2
+
+
+Now in the app.py
+
+
+python -c "import os, sys; print(os.path.dirname(sys.executable))"
+
+import os
+>>> import sys
+>>> os.path.dirname(sys.executable)
+'C:\\Python25'
