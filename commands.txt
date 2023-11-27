@@ -10,6 +10,11 @@ pip install conda
 pip install mlflow
 mlflow ui 
 
+##=================
+For MAC-OS 
+python -m pip install pandas
+python -m pip install scikit-learn
+python -m pip install mlflow
 
 
 
